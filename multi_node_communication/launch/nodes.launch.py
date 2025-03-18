@@ -9,6 +9,7 @@ def generate_launch_description():
     
     package_dir = get_package_share_directory('multi_node_communication')
 
+    # Set Node Info
     node1 = Node(
         package='multi_node_communication',
         executable='node1',
@@ -30,7 +31,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # LaunchDescription对象
+    # 创建LaunchDescription对象
     ld = LaunchDescription([
         node1,
         node2,
