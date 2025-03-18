@@ -9,7 +9,7 @@ def generate_launch_description():
     
     package_dir = get_package_share_directory('multi_node_communication')
 
-    # Set Node Info
+    # Set Nodes Info
     node1 = Node(
         package='multi_node_communication',
         executable='node1',
